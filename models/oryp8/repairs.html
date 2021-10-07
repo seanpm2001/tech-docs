@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Parts &amp; Repairs - System76 Technical Documentation</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../../theme/variables.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded affix "><a href="../../README.html">Introduction</a></li><li class="expanded "><a href="../../models/README.html"><strong aria-hidden="true">1.</strong> Current Models</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw2/README.html"><strong aria-hidden="true">1.1.</strong> Adder WS (addw2)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw2/external-overview.html"><strong aria-hidden="true">1.1.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/addw2/internal-overview.html"><strong aria-hidden="true">1.1.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/addw2/repairs.html"><strong aria-hidden="true">1.1.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/bonw14/README.html"><strong aria-hidden="true">1.2.</strong> Bonobo WS (bonw14)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/bonw14/external-overview.html"><strong aria-hidden="true">1.2.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/bonw14/internal-overview.html"><strong aria-hidden="true">1.2.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/bonw14/repairs.html"><strong aria-hidden="true">1.2.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/darp7/README.html"><strong aria-hidden="true">1.3.</strong> Darter Pro (darp7)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/darp7/external-overview.html"><strong aria-hidden="true">1.3.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/darp7/internal-overview.html"><strong aria-hidden="true">1.3.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/darp7/repairs.html"><strong aria-hidden="true">1.3.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/galp5/README.html"><strong aria-hidden="true">1.4.</strong> Galago Pro (galp5)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/galp5/external-overview.html"><strong aria-hidden="true">1.4.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/galp5/internal-overview.html"><strong aria-hidden="true">1.4.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/galp5/repairs.html"><strong aria-hidden="true">1.4.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/gaze16/README.html"><strong aria-hidden="true">1.5.</strong> Gazelle (gaze16)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/gaze16/external-overview.html"><strong aria-hidden="true">1.5.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/gaze16/internal-overview.html"><strong aria-hidden="true">1.5.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/gaze16/repairs.html"><strong aria-hidden="true">1.5.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/launch_1/README.html"><strong aria-hidden="true">1.6.</strong> Launch (launch_1)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/launch_1/external-overview.html"><strong aria-hidden="true">1.6.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/launch_1/repairs.html"><strong aria-hidden="true">1.6.2.</strong> Customization &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/lemp10/README.html"><strong aria-hidden="true">1.7.</strong> Lemur Pro (lemp10)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/lemp10/external-overview.html"><strong aria-hidden="true">1.7.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/lemp10/internal-overview.html"><strong aria-hidden="true">1.7.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/lemp10/repairs.html"><strong aria-hidden="true">1.7.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/meer6/README.html"><strong aria-hidden="true">1.8.</strong> Meerkat (meer6)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/meer6/external-overview.html"><strong aria-hidden="true">1.8.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/meer6/internal-overview.html"><strong aria-hidden="true">1.8.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/meer6/repairs.html"><strong aria-hidden="true">1.8.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/oryp8/README.html"><strong aria-hidden="true">1.9.</strong> Oryx Pro (oryp8)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/oryp8/external-overview.html"><strong aria-hidden="true">1.9.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/oryp8/internal-overview.html"><strong aria-hidden="true">1.9.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/oryp8/repairs.html" class="active"><strong aria-hidden="true">1.9.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/pang11/README.html"><strong aria-hidden="true">1.10.</strong> Pangolin (pang11)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/pang11/external-overview.html"><strong aria-hidden="true">1.10.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/pang11/internal-overview.html"><strong aria-hidden="true">1.10.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/pang11/repairs.html"><strong aria-hidden="true">1.10.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/serw12/README.html"><strong aria-hidden="true">1.11.</strong> Serval WS (serw12)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/serw12/external-overview.html"><strong aria-hidden="true">1.11.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/serw12/internal-overview.html"><strong aria-hidden="true">1.11.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/serw12/repairs.html"><strong aria-hidden="true">1.11.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/README.html"><strong aria-hidden="true">1.12.</strong> Thelio Major (Intel and AMD)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/external-overview.html"><strong aria-hidden="true">1.12.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/internal-overview.html"><strong aria-hidden="true">1.12.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-major-intel-and-amd/repairs.html"><strong aria-hidden="true">1.12.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-massive-b1.2/README.html"><strong aria-hidden="true">1.13.</strong> Thelio Massive (thelio-massive-b1.2)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-massive-b1.2/external-overview.html"><strong aria-hidden="true">1.13.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-massive-b1.2/internal-overview.html"><strong aria-hidden="true">1.13.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-massive-b1.2/repairs.html"><strong aria-hidden="true">1.13.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-mega-r1.0/README.html"><strong aria-hidden="true">1.14.</strong> Thelio Mega (thelio-mega-r1.0)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-mega-r1.0/external-overview.html"><strong aria-hidden="true">1.14.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-mega-r1.0/internal-overview.html"><strong aria-hidden="true">1.14.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-mega-r1.0/repairs.html"><strong aria-hidden="true">1.14.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-mira-b1.0/README.html"><strong aria-hidden="true">1.15.</strong> Thelio Mira (thelio-mira-b1.0)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-mira-b1.0/external-overview.html"><strong aria-hidden="true">1.15.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-mira-b1.0/internal-overview.html"><strong aria-hidden="true">1.15.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-mira-b1.0/repairs.html"><strong aria-hidden="true">1.15.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/thelio-mira-r1.0/README.html"><strong aria-hidden="true">1.16.</strong> Thelio Mira (thelio-mira-r1.0)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/thelio-mira-r1.0/external-overview.html"><strong aria-hidden="true">1.16.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/thelio-mira-r1.0/internal-overview.html"><strong aria-hidden="true">1.16.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/thelio-mira-r1.0/repairs.html"><strong aria-hidden="true">1.16.3.</strong> Parts &amp; Repairs</a></li></ol></li></ol></li><li class="expanded "><a href="../../models/README.html"><strong aria-hidden="true">2.</strong> Previous Models</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw1/README.html"><strong aria-hidden="true">2.1.</strong> Adder WS (addw1)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/addw1/external-overview.html"><strong aria-hidden="true">2.1.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/addw1/internal-overview.html"><strong aria-hidden="true">2.1.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/addw1/repairs.html"><strong aria-hidden="true">2.1.3.</strong> Parts &amp; Repairs</a></li><li class="expanded "><a href="../../models/addw1/setup-specs.html"><strong aria-hidden="true">2.1.4.</strong> UEFI Setup &amp; Specs</a></li></ol></li><li class="expanded "><a href="../../models/darp6/README.html"><strong aria-hidden="true">2.2.</strong> Darter Pro (darp6)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/darp6/external-overview.html"><strong aria-hidden="true">2.2.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/darp6/internal-overview.html"><strong aria-hidden="true">2.2.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/darp6/repairs.html"><strong aria-hidden="true">2.2.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/galp4/README.html"><strong aria-hidden="true">2.3.</strong> Galago Pro (galp4)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/galp4/external-overview.html"><strong aria-hidden="true">2.3.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/galp4/internal-overview.html"><strong aria-hidden="true">2.3.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/galp4/repairs.html"><strong aria-hidden="true">2.3.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/gaze15/README.html"><strong aria-hidden="true">2.4.</strong> Gazelle (gaze15)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/gaze15/external-overview.html"><strong aria-hidden="true">2.4.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/gaze15/internal-overview.html"><strong aria-hidden="true">2.4.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/gaze15/repairs.html"><strong aria-hidden="true">2.4.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/lemp9/README.html"><strong aria-hidden="true">2.5.</strong> Lemur Pro (lemp9)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/lemp9/external-overview.html"><strong aria-hidden="true">2.5.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/lemp9/internal-overview.html"><strong aria-hidden="true">2.5.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/lemp9/repairs.html"><strong aria-hidden="true">2.5.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/meer5/README.html"><strong aria-hidden="true">2.6.</strong> Meerkat (meer5)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/meer5/external-overview.html"><strong aria-hidden="true">2.6.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/meer5/internal-overview.html"><strong aria-hidden="true">2.6.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/meer5/repairs.html"><strong aria-hidden="true">2.6.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/oryp7/README.html"><strong aria-hidden="true">2.7.</strong> Oryx Pro (oryp7)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/oryp7/external-overview.html"><strong aria-hidden="true">2.7.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/oryp7/internal-overview.html"><strong aria-hidden="true">2.7.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/oryp7/repairs.html"><strong aria-hidden="true">2.7.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/oryp6/README.html"><strong aria-hidden="true">2.8.</strong> Oryx Pro (oryp6)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/oryp6/external-overview.html"><strong aria-hidden="true">2.8.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/oryp6/internal-overview.html"><strong aria-hidden="true">2.8.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/oryp6/repairs.html"><strong aria-hidden="true">2.8.3.</strong> Parts &amp; Repairs</a></li></ol></li><li class="expanded "><a href="../../models/pang10/README.html"><strong aria-hidden="true">2.9.</strong> Pangolin (pang10)</a></li><li><ol class="section"><li class="expanded "><a href="../../models/pang10/external-overview.html"><strong aria-hidden="true">2.9.1.</strong> External Overview</a></li><li class="expanded "><a href="../../models/pang10/internal-overview.html"><strong aria-hidden="true">2.9.2.</strong> Internal Overview</a></li><li class="expanded "><a href="../../models/pang10/repairs.html"><strong aria-hidden="true">2.9.3.</strong> Parts &amp; Repairs</a></li></ol></li></ol></li><li class="expanded "><a href="../../components/README.html"><strong aria-hidden="true">3.</strong> Components</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/README.html"><strong aria-hidden="true">3.1.</strong> Intel</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/cpu/README.html"><strong aria-hidden="true">3.1.1.</strong> Central Processing Unit (CPU)</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/cpu/cml-u/README.html"><strong aria-hidden="true">3.1.1.1.</strong> Comet Lake-U (CML-U)</a></li></ol></li><li class="expanded "><a href="../../components/intel/me/README.html"><strong aria-hidden="true">3.1.2.</strong> Management Engine (ME)</a></li><li class="expanded "><a href="../../components/intel/pch/README.html"><strong aria-hidden="true">3.1.3.</strong> Platform Controller Hub (PCH)</a></li><li><ol class="section"><li class="expanded "><a href="../../components/intel/pch/400-lp/README.html"><strong aria-hidden="true">3.1.3.1.</strong> 400 Series Low-Power Platform Controller Hub (400 PCH-LP)</a></li></ol></li></ol></li><li class="expanded "><a href="../../components/ti/README.html"><strong aria-hidden="true">3.2.</strong> Texas Instruments (TI)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">System76 Technical Documentation</h1>
+
+                        <div class="right-buttons">
+                            <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                            <a href="https://github.com/system76/tech-docs" title="Git repository" aria-label="Git repository">
+                                <i id="git-repository-button" class="fa fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#oryx-pro-parts--repairs" id="oryx-pro-parts--repairs">Oryx Pro (Parts &amp; Repairs)</a></h1>
+<p>Many components in your Oryx Pro can be upgraded or replaced as necessary. This page uses photos of the 15&quot; model, but screw counts, general component locations, and other details are the same on the 17&quot; model unless otherwise noted.</p>
+<ul>
+<li><a href="#removing-the-bottom-cover">Removing the bottom cover</a></li>
+<li><a href="#replacing-the-ram">Replacing the RAM</a></li>
+<li><a href="#replacing-an-m2nvme-ssd">Replacing an M.2/NVMe SSD</a></li>
+<li><a href="#replacing-the-wireless-card">Replacing the WiFi/Bluetooth module</a></li>
+<li><a href="#replacing-the-battery">Replacing the battery</a></li>
+<li><a href="#replacing-the-cmos-battery">Replacing the CMOS battery</a></li>
+<li><a href="#replacing-the-cooling-system">Replacing the fans/heatsink/thermal paste</a></li>
+<li><a href="#replacing-the-keyboard">Replacing the keyboard</a></li>
+</ul>
+<h2><a class="header" href="#removing-the-bottom-cover" id="removing-the-bottom-cover">Removing the bottom cover:</a></h2>
+<p>Removing the cover is required to access the internal components. Prior to removing the cover, ensure the AC power is unplugged and all peripherals (including SD cards and USB drives) are unplugged or removed from the system.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 5 minutes<br />
+<strong>Difficulty:</strong> Easy <span style="color:green;">●</span></p>
+<h3><a class="header" href="#steps-to-remove-the-bottom-cover" id="steps-to-remove-the-bottom-cover">Steps to remove the bottom cover:</a></h3>
+<ol>
+<li>Place the machine lid-side down.
+<ul>
+<li>Use a soft surface (such as a towel) to avoid scratches.</li>
+</ul>
+</li>
+<li>Remove the 12 bottom panel screws.
+<ul>
+<li>On the 15&quot; model, the two back corner screws are longer than the rest (highlighted red below.)</li>
+<li>On the 17&quot; model, all screws are the same length.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/bottom-panel-screws.webp" alt="Bottom panel screws" /></p>
+<ol start="3">
+<li>Lift the bottom panel off of the case.</li>
+</ol>
+<h2><a class="header" href="#replacing-the-ram" id="replacing-the-ram">Replacing the RAM:</a></h2>
+<p>The Oryx Pro 8 supports up to 64GB (2x32GB) of DDR4 SO-DIMMs running at 3200MHz. If you've purchased new RAM, need to replace your RAM, or are reseating your RAM, follow these steps.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 10 minutes<br />
+<strong>Difficulty:</strong> Easy <span style="color:green;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-ram" id="steps-to-replace-the-ram">Steps to replace the RAM:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="#removing-the-bottom-cover">remove the bottom cover</a>.</li>
+<li>Press the small tabs on both sides of the RAM simultaneously. The RAM should spring up to an angle.</li>
+</ol>
+<p><img src="./img/ram-slots.webp" alt="RAM removal" /></p>
+<ol start="3">
+<li>Remove the RAM from the slot.</li>
+<li>Insert the new RAM (or reseat the existing RAM) by placing it in the keyed slot and pressing down on the RAM until it clicks into place.</li>
+</ol>
+<h2><a class="header" href="#replacing-an-m2nvme-ssd" id="replacing-an-m2nvme-ssd">Replacing an M.2/NVMe SSD:</a></h2>
+<p>This model supports up to two M.2 SSDs. Both M.2 slots are size 2280. The inner-most slot (closest to the battery) supports only PCIe NVMe Generation 4, and the outer-most slot (farthest away from the battery) supports either PCIe NVMe Generation 3 or SATA III.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 10 minutes<br />
+<strong>Difficulty:</strong> Easy <span style="color:green;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-m2-drive" id="steps-to-replace-the-m2-drive">Steps to replace the M.2 drive:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="#removing-the-bottom-cover">remove the bottom cover</a>.</li>
+<li>Unscrew the retainer screw opposite the M.2 slot.</li>
+</ol>
+<p><img src="./img/m2-slots.webp" alt="M.2 slots" /></p>
+<ol start="3">
+<li>Remove the existing M.2 drive by pulling it out of the slot.</li>
+<li>Insert the new M.2 drive into the slot and hold it in place.</li>
+<li>Replace the retainer screw.</li>
+</ol>
+<h2><a class="header" href="#replacing-the-wireless-card" id="replacing-the-wireless-card">Replacing the wireless card:</a></h2>
+<p>Your Oryx Pro's WiFi and Bluetooth are both handled by the same module. It is a standard M.2 2230 slot with PCIe and USB interfaces (A Key).</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 10 minutes<br />
+<strong>Difficulty:</strong> Medium <span style="color:orange;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-wifibluetooth-module" id="steps-to-replace-the-wifibluetooth-module">Steps to replace the WiFi/Bluetooth module:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="#removing-the-bottom-cover">remove the bottom cover</a>.</li>
+<li>Locate the wireless module. Remove any clear tape that is securing the wires.</li>
+</ol>
+<p><img src="./img/wireless-card.webp" alt="Wireless card" /></p>
+<ol start="3">
+<li>Gently remove the two antennas (highlighted red above) by pulling them up and away from the wireless card.</li>
+<li>Remove the retaining screw opposite the M.2 slot, highlighted yellow above.</li>
+<li>The wireless card will pop up at an angle. Remove the card from the M.2 slot.</li>
+<li>Insert the new wireless card into the M.2 slot at an angle.</li>
+<li>Replace the retaining screw.</li>
+<li>Attach the two antennas by aligning the circular fittings and pressing onto the wireless card. The connectors will snap into place. <em>Use caution when attaching the connectors; the pins can bend, break, or snap.</em></li>
+</ol>
+<h2><a class="header" href="#replacing-the-battery" id="replacing-the-battery">Replacing the battery:</a></h2>
+<p>The battery provides primary power whenever the system is unplugged.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 10 minutes<br />
+<strong>Difficulty:</strong> Easy <span style="color:green;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-battery" id="steps-to-replace-the-battery">Steps to replace the battery:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="#removing-the-bottom-cover">remove the bottom cover</a>.</li>
+<li>If there is an M.2 SSD in the slot closest to the battery, follow the steps above to <a href="#replacing-an-m2nvme-ssd">remove the M.2 SSD</a>.</li>
+<li>The battery is held in by three of the bottom panel screws and two additional screws, one of which is underneath the M.2 SSD. Remove the two final screws, highlighted red below.</li>
+</ol>
+<p><img src="./img/battery.webp" alt="Battery screws" /></p>
+<ol start="4">
+<li>Unplug the white connector (highlighted yellow above) connecting the battery to the motherboard.</li>
+<li>Remove the battery, starting with the plastic tabs next to the screw holes.</li>
+<li>When plugging in the new battery, the red wire on the connector goes on the left, and the black wire goes on the right.</li>
+</ol>
+<h2><a class="header" href="#replacing-the-cmos-battery" id="replacing-the-cmos-battery">Replacing the CMOS battery:</a></h2>
+<p>The CMOS battery supplies power to the system's CMOS chip. UEFI settings and the computer's hardware clock are stored on the CMOS. If your system doesn't boot, you can reset the CMOS to force a low-level hardware reset. If your clock is constantly resetting, it's likely your CMOS battery needs to be replaced.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 15 minutes<br />
+<strong>Difficulty:</strong> Medium <span style="color:orange;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-cmos-battery" id="steps-to-replace-the-cmos-battery">Steps to replace the CMOS battery:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="#removing-the-bottom-cover">remove the bottom cover</a>.</li>
+<li>If necessary, remove any components that are covering the CMOS battery:
+<ul>
+<li>For the 15&quot; model, <a href="#replacing-an-m2nvme-ssd">remove the M.2 SSD closest to the main battery</a> and <a href="#replacing-the-battery">remove the main battery</a>.</li>
+<li>For the 17&quot; model, <a href="#replacing-an-m2nvme-ssd">remove both M.2 SSDs</a>.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/cmos-battery.webp" alt="CMOS battery" /></p>
+<ol start="3">
+<li>Unplug the small white connector that connects the CMOS battery to the motherboard. If you are replacing the battery, gently pull from the sides to pry it up from where it's stuck to the case.</li>
+<li>To clear the CMOS, <a href="#replacing-the-battery">disconnect the main battery</a> (if it's still installed), open the lid of the machine, and hold down the power button for at least 15 seconds to discharge any residual energy in the system.</li>
+<li>Re-connect the CMOS battery, <a href="#replacing-the-battery">replace the main battery</a>, and <a href="#replacing-an-m2nvme-ssd">replace the M.2 SSD</a>.</li>
+<li>Replace the bottom panel and power up the Oryx Pro. The system may power itself off and on after initial boot; this is normal behavior when the CMOS has been reset.</li>
+</ol>
+<h2><a class="header" href="#replacing-the-cooling-system" id="replacing-the-cooling-system">Replacing the cooling system:</a></h2>
+<p>If the CPU/GPU fans become noisy and cleaning them out doesn't fix the issue, you may need a new fan. Contact Support to start a warranty claim or parts purchase.</p>
+<p>Depending on your climate and the age of the machine, it may be necessary to apply new thermal paste between the CPU/GPU and the heatsink. Thermal paste helps facilitate effective heat transfer between the CPU/GPU and the cooling equipment. These instructions can also be used in the unlikely event that your heatsink needs to be replaced.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver<br />
+<strong>Time estimate:</strong> 20 minutes<br />
+<strong>Difficulty:</strong> High <span style="color:red;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-fansheatsinkthermal-paste" id="steps-to-replace-the-fansheatsinkthermal-paste">Steps to replace the fans/heatsink/thermal paste:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="#removing-the-bottom-cover">remove the bottom cover</a>.</li>
+<li>Locate the CPU heatsink screws.</li>
+<li>Remove the silver screws in the order of the stamped numbers, starting with #1, then #2, and continuing until you have removed #6.
+<ul>
+<li>The order for the 15&quot; model is shown below; the screws are numbered differently on the 17&quot; model. Follow the order stamped into the heatsink metal.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/thermal-screws.webp" alt="Thermal screws" /></p>
+<ol start="4">
+<li>Remove the 6 black screws holding the fans onto the chassis (highlighted green above.) <em>Note: Do not remove the smaller black screws holding the fan covers onto the fans.</em></li>
+<li>If there is any clear tape securing the heatsink/fans or the fan wires, remove it.</li>
+<li>Unplug the two white fan connectors from the motherboard (highlighted cyan above).</li>
+<li>Remove the heatsink/fans from the case, being careful not to bend the heatsink pipes. It may take some pressure to break the seal of the thermal paste.</li>
+<li>Using a paper towel, remove the existing thermal paste. You may also use a small amount of rubbing alcohol if the old paste is dried or difficult to remove.</li>
+</ol>
+<p><img src="./img/thermal-paste-removal.webp" alt="Thermal paste removal" /></p>
+<ol start="9">
+<li>After cleaning the CPU, GPU, and heatsink, apply a small line of thermal paste directly onto the CPU and GPU chips.</li>
+</ol>
+<p><img src="./img/thermal-paste-application.webp" alt="Thermal paste application" /></p>
+<ol start="10">
+<li>Carefully replace the heatsink.</li>
+<li>Replace the silver heatsink screws, starting with #1, then #2, and so on until #6.</li>
+<li>Replace the black fan screws.</li>
+<li>Plug the two white fan connectors back into the motherboard.</li>
+</ol>
+<h2><a class="header" href="#replacing-the-keyboard" id="replacing-the-keyboard">Replacing the keyboard:</a></h2>
+<p>The keyboard can be replaced if its switches or electronics have been damaged.</p>
+<p><strong>Tools required:</strong> Cross-head (Phillips) screwdriver, tweezers (optional)<br />
+<strong>Time estimate:</strong> 10 minutes<br />
+<strong>Difficulty:</strong> High <span style="color:red;">●</span></p>
+<h3><a class="header" href="#steps-to-replace-the-keyboard" id="steps-to-replace-the-keyboard">Steps to replace the keyboard:</a></h3>
+<ol>
+<li>Follow the steps above to <a href="#removing-the-bottom-cover">remove the bottom cover</a>.</li>
+<li>Locate the keyboard adhesive strip behind the right fan.</li>
+</ol>
+<p><img src="./img/keyboard-adhesive.webp" alt="Keyboard adhesive access point" /></p>
+<ol start="3">
+<li>Using a pair of tweezers, pull out the end of the adhesive strip.</li>
+</ol>
+<p><img src="./img/keyboard-adhesive-removal.webp" alt="Keyboard adhesive removal" /></p>
+<ul>
+<li>Alternatively, to remove the keyboard without tweezers, <a href="#replacing-the-cooling-system">remove the fan</a> so the adhesive is exposed, then pull it away from the keyboard.
+<ul>
+<li>This method is not recommended unless you are also replacing the thermal paste.</li>
+</ul>
+</li>
+</ul>
+<p><img src="./img/keyboard-adhesive-exposed.webp" alt="Keyboard adhesive behind fan" /></p>
+<ol start="4">
+<li>Open the lid slightly and place the machine on its side.</li>
+<li>Push a screwdriver into the adhesive slot until the keyboard pops out.
+<ul>
+<li>If the fan has been removed, the keyboard can also be pushed out from behind the fan blade cutouts.</li>
+</ul>
+</li>
+</ol>
+<p><img src="./img/keyboard-push-point.webp" alt="Keyboard push point" /></p>
+<ol start="6">
+<li>Set the machine back down and raise the keyboard away from the chassis. The larger ribbon cable is for the keyboard, while the smaller ribbon cable is for the keyboard backlight.</li>
+</ol>
+<p><img src="./img/keyboard-ribbons.webp" alt="Keyboard ribbon connectors" /></p>
+<ol start="7">
+<li>Flip the black latches upwards to free the ribbon cables.</li>
+<li>Pull the ribbon cables out of the connectors.</li>
+<li>Remove the keyboard and replace it with the new one.</li>
+<li>Carefully slide both ribbon cables into their connectors.</li>
+<li>Flip the black latches back into place to secure the ribbon cables.</li>
+<li>Place the keyboard back into position, starting with the tabs on the bottom edge.</li>
+<li>Secure the rest of the keyboard by pressing down on each of its edges.</li>
+<li>Turn the machine lid-side down again and press the adhesive strip back into its slot.
+<ul>
+<li>The visible end of the adhesive strip does not need to completely go back into place; the keyboard is primarily held in place by the perimeter clips and the non-visible section of adhesive.</li>
+</ul>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../models/oryp8/internal-overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../models/pang11/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../models/oryp8/internal-overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../../models/pang11/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
